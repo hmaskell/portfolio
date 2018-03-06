@@ -1,0 +1,245 @@
+<!-- 
+
+Project for IAT 399 - Portfolio.
+Created by Heather Maskell. 03/06/18
+
+styleguide.html
+
+-->
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Heather Robyn Portfolio | Styleguide</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <!-- bootstrap reference -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="js/script.js"></script>
+
+        <!-- bootstrap reference -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <!-- font references -->
+        <link href="https://fonts.googleapis.com/css?family=Barlow|Roboto|VT323" rel="stylesheet">
+
+    </head>
+    <body>
+        <header>
+
+            <nav class="navbar">
+              <div class="container-fluid">
+                <a href="index.html">Home</a></li>
+                <a href="work.html">Work</a>
+                <a href="styleguide.html">Styleguide</a>
+                <a href="contact.html">Contact</a>
+                <div id="socialmedia">
+                    <a href="https://ca.linkedin.com/in/heather-maskell-7a588869">
+                        <img src="img/socialmedia/linkedin.png" alt="LinkedIn Logo" class="icon">
+                    </a>
+                    <a href="https://www.behance.net/heathermaskell">
+                        <img src="img/socialmedia/behance.png" alt="Behance Logo" class="icon">
+                    </a>
+                    <a href="https://www.instagram.com/heatherobyndesigns/">
+                        <img src="img/socialmedia/instagram.png" alt="Instagram Logo" class="icon">
+                    </a>
+                    <a href=""mailto:heatherobyndesigns@gmail.com?Subject=Hello%20there" target="_top"">
+                        <img src="img/socialmedia/email.png" alt="Email Icon" class="icon">
+                    </a>
+                </div>
+              </div>
+            </nav>
+
+            <div class="jumbotron text-center">
+
+                <h1>Heather Robyn</h1>
+                <h2>The Styleguide</h2>
+            </div>
+        </header>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+                <h3>Text Elements</h3>
+                    <section>
+                        <h1>H1 Header</h1>
+                        <code>
+                            h1 {
+
+                            font-family: 'Leixo', Arial, sans-serif;
+                            font-weight:normal;
+                            font-style:normal;
+                            color: #fe9c8f;
+
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h2>H2 Header</h2>
+                        <code>
+                            h2 {
+
+                                font-family: 'Barlow', sans-serif;
+                                font-size: 1.5rem;
+                                color: #c62b5c;
+                                
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h3>H3 Header</h3>
+                        <code>
+                            h3 {
+                                font-family: 'Barlow', sans-serif;
+                                font-size: 1.3rem;
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h4>H4 Header</h4>
+                        <code>
+                            h4 {
+                                font-family: 'Barlow', sans-serif;
+                                font-size: 1.2rem;
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h5>H5 Header</h5>
+                        <code>
+                            h5 {
+                                font-family: 'Barlow', sans-serif;
+                                font-size: 1.1rem;
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <p>Paragraph</p>
+                        <code>
+                            p {
+                                font-family: 'Barlow', sans-serif;
+                                font-size: 1rem;
+                            }
+                        </code>
+                    </section>
+            </div>
+
+/* text styling */
+
+/* link styling */
+
+nav {
+    background-color: #fe9c8f!important;
+}
+
+nav a {
+    font-family: 'Barlow', sans-serif!important;
+    font-size: 1.2rem!important;
+    color: #851e3e!important;
+}
+
+a {
+    color: #851e3e!important;
+    transition: .4s;
+}
+
+a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none!important;
+}
+
+a:hover{
+    color: #c62b5c!important;
+    transition: .4s;
+}
+
+.navbar {
+    padding: 1rem 2.5rem!important;
+}
+
+.btn-info {
+    background-color: #451e3e!important;
+    border-color: #451e3e!important;
+    color: #fe9c8f!important;
+}
+
+.btn {
+    margin: 1rem!important;
+}
+
+/* icon styling */
+
+.icon {
+    display: inline;
+    width: 2.4rem;
+    padding: 0 .5rem 1rem;
+}
+
+#socialmedia {
+    padding-top:1rem;
+}
+
+#copyright {
+    /*color: #c62b5c!important;*/
+    font-size: .8rem!important;
+}
+
+/*section styling*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin-bottom: 100px!important; /* Margin bottom by footer height */
+}
+
+
+.jumbotron {
+    background-color: #051e3e!important;
+    border-radius: 0!important;
+}
+
+footer {
+    position: absolute!important;
+    bottom: 0!important;
+    padding: 1rem 1rem .1rem;
+    background-color: #fe9c8f!important;
+    height: 100px;
+    width: 100%;
+    overflow:hidden!important;
+}
+
+
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+                <h3>Sitemap</h3>
+                <img src="img/img-styleguide/sitemap.png">
+            </div>
+          </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+
+                <div id="footer-socialmedia">
+                    <a href="https://ca.linkedin.com/in/heather-maskell-7a588869">
+                        <img src="img/socialmedia/linkedin.png" alt="LinkedIn Logo" class="icon">
+                    </a>
+                    <a href="https://www.behance.net/heathermaskell">
+                        <img src="img/socialmedia/behance.png" alt="Behance Logo" class="icon">
+                    </a>
+                   <a href="https://www.instagram.com/heatherobyndesigns/">
+                        <img src="img/socialmedia/instagram.png" alt="Instagram Logo" class="icon">
+                    </a>
+                   <a href=""mailto:heatherobyndesigns@gmail.com?Subject=Hello%20there" target="_top"">
+                        <img src="img/socialmedia/email.png" alt="Email Icon" class="icon">
+                    </a>
+                 </div>
+                 <p id="copyright">Copyright Heather Maskell 2018. All rights reserved.</p>
+        </footer>
+    	<script src="js/script.js"></script>
+    </body>
+</html>
