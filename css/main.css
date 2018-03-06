@@ -1,8 +1,13 @@
 h1 {
-	font-family: Leixo!important;
+	font-family: 'Leixo', Arial, sans-serif!important;
+	font-weight:normal;
+	font-style:normal;
 }
 
 h2 {
+
+	font-family: 'Barlow', sans-serif!important;
+	font-size: 1.5rem!important;
 	
 }
 
