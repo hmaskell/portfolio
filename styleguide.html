@@ -61,8 +61,8 @@ styleguide.html
 
         <div class="container">
           <div class="row">
-            <div class="col-lg-6">
-                <h3>Text Elements</h3>
+            <div class="col-lg-6 style-group">
+                <h1>Text Elements</h1>
                     <section>
                         <h1>H1 Header</h1>
                         <code>
@@ -124,96 +124,167 @@ styleguide.html
                             }
                         </code>
                     </section>
+                    <section>
+                        <p id="copyright">Copyright Paragraph</p>
+                        <code>
+                            #copyright {<br>
+                                font-size: .8rem!important;<br>
+                            }
+                        </code>
+                    </section>
+            </div>
+            <div class="col-lg-6 style-group">
+                <h1>Interactive Elements</h1>
+                    <section>
+                        <h2>Navigation</h2>
+                        <code>
+                            nav { <br>
+                                background-color: #fe9c8f!important;<br>
+                            }<br>
+                            <br>
+                            nav a {<br>
+                                font-family: 'Barlow', sans-serif!important;<br>
+                                font-size: 1.2rem!important;<br>
+                                color: #851e3e!important;<br>
+                            }<br>
+                            <br>
+                            .navbar {<br>
+                                padding: 1rem 2.5rem!important;<br>
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <a href="#">Links</a>
+                        <code>
+                            <br>
+                            a {<br>
+                                color: #851e3e!important;<br>
+                                transition: .4s;<br>
+                            }<br>
+                            <br>
+                            a:hover, a:visited, a:link, a:active {<br>
+                                text-decoration: none!important;<br>
+                            }<br>
+                            <br>
+                            a:hover {<br>
+                                color: #c62b5c!important;<br>
+                                transition: .4s;<br>
+                            }
+                        </code>
+                    </section>
+                    <section>
+                            <a class="btn btn-info" href="work.html" role="button">Buttons</a>
+                        <code><br>
+                            .btn-info {<br>
+                                background-color: #451e3e!important;<br>
+                                border-color: #451e3e!important;<br>
+                                color: #fe9c8f!important;<br>
+                            }<br>
+                            <br>
+                            .btn {<br>
+                                margin: 1rem!important;<br>
+                            }<br>   
+                            <br>
+                            .work-button {<br>
+                                text-align: center;<br>
+                            }
+                        </code>
+                    </section>
+                </div>
             </div>
 
-/* text styling */
+            <div class="row">
+                <div class="col-lg-6 style-group">
+                    <h1>Images</h1>
+                    <section>
+                        <h2>Icons</h2>
+                        <code>
+                            .icon {<br>
+                                display: inline;<br>
+                                width: 2.4rem;<br>
+                                padding: 0 .5rem 1rem;<br>
+                            }<br>
+                            <br>
+                            #socialmedia {<br>
+                                padding-top:1rem;<br>
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h2>Images</h2>
+                        <code>
+                            img {<br>
+                                max-width: 100%;<br>
+                            }<br>
+                            <br>
+                            .project-preview img {<br>
+                                max-width: 100%;<br>
+                                max-height: 30rem;<br>
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h2>Figcaptions</h2>
+                        <code>
+                            figcaption {<br>
+                                padding: 1rem;<br>
+                                border-width: 2px;<br>
+                                border-color: #051e3e;<br>
+                                border-radius: 4px;<br>
+                                border-style: solid;<br>
+                                border-top-style: none;<br>
+                                transition: .4s;<br>
+                            }<br>
 
-/* link styling */
-
-nav {
-    background-color: #fe9c8f!important;
-}
-
-nav a {
-    font-family: 'Barlow', sans-serif!important;
-    font-size: 1.2rem!important;
-    color: #851e3e!important;
-}
-
-a {
-    color: #851e3e!important;
-    transition: .4s;
-}
-
-a:hover, a:visited, a:link, a:active
-{
-    text-decoration: none!important;
-}
-
-a:hover{
-    color: #c62b5c!important;
-    transition: .4s;
-}
-
-.navbar {
-    padding: 1rem 2.5rem!important;
-}
-
-.btn-info {
-    background-color: #451e3e!important;
-    border-color: #451e3e!important;
-    color: #fe9c8f!important;
-}
-
-.btn {
-    margin: 1rem!important;
-}
-
-/* icon styling */
-
-.icon {
-    display: inline;
-    width: 2.4rem;
-    padding: 0 .5rem 1rem;
-}
-
-#socialmedia {
-    padding-top:1rem;
-}
-
-#copyright {
-    /*color: #c62b5c!important;*/
-    font-size: .8rem!important;
-}
-
-/*section styling*/
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  margin-bottom: 100px!important; /* Margin bottom by footer height */
-}
+                            figcaption:hover {<br>
+                                background-color: #051e3e!important;<br>
+                                transition: .4s;<br>
+                            }
+                        </code>
+                    </section>
+                </div>
+                <div class="col-lg-6 style-group">
+                    <h1>Sections</h1>
+                    <section>
+                        <h2>Footer</h2>
+                        <code>
+                            footer {<br>
+                                position: absolute!important;<br>
+                                bottom: 0!important;<br>
+                                padding: 1rem 1rem .1rem;<br>
+                                background-color: #fe9c8f!important;<br>
+                                height: 100px;<br>
+                                width: 100%;<br>
+                                overflow:hidden!important;<br>
+                            }<br>
+                        </code>
+                    </section>
+                    <section>
+                        <h2>Bottom-sticky footer</h2>
+                        <code>
+                            html {<br>
+                              position: relative;<br>
+                              min-height: 100%;<br>
+                          }<br>
+                            <br>
+                            body {<br>
+                              margin-bottom: 100px!important;<br>
+                            }
+                        </code>
+                    </section>
+                    <section>
+                        <h2>Hero Banner</h2>
+                        <code>
+                            .jumbotron {<br>
+                                background-color: #051e3e!important;<br>
+                                border-radius: 0!important;<br>
+                            }
+                        </code>
+                    </section>
+                </div>
+            </div>
 
 
-.jumbotron {
-    background-color: #051e3e!important;
-    border-radius: 0!important;
-}
-
-footer {
-    position: absolute!important;
-    bottom: 0!important;
-    padding: 1rem 1rem .1rem;
-    background-color: #fe9c8f!important;
-    height: 100px;
-    width: 100%;
-    overflow:hidden!important;
-}
-
-
-          </div>
           <div class="row">
             <div class="col-lg-12">
                 <h3>Sitemap</h3>

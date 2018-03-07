@@ -107,6 +107,18 @@ section {
 	margin-bottom: 1rem;
 }
 
+.style-group {
+	background-color: #f9f4f4;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.style-group section {
+	background-color: #f0e4e4;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
 .jumbotron {
 	background-color: #051e3e!important;
 	border-radius: 0!important;
@@ -128,12 +140,35 @@ footer {
 
 /* images */
 
+.main-icon-div {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-icon {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem 5rem;
+}
+
+.scouts-sketch {
+    display: inline-block;
+    max-height: 20.5rem;
+    padding: 1rem;
+}
+
+.scouts-wireframe {
+    display: inline-block;
+    max-height: 17rem;
+    padding: 1rem;
+}
+
 .project-preview img {
 	max-width: 100%;
     max-height: 30rem;
 }
 
-figcaption {
+.preview-fig {
     padding: 1rem;
     border-width: 2px;
     border-color: #051e3e;
@@ -143,13 +178,18 @@ figcaption {
     transition: .4s;
 }
 
-figcaption:hover {
+.preview-fig:hover {
 	background-color: #051e3e!important;
 	transition: .4s;
 }
 
+figcaption {
+	text-align: center;
+}
+
 img {
 	max-width: 100%;
+	display: inline-block;
 }
 
 /* media queries */
