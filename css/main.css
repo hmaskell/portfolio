@@ -33,6 +33,7 @@ h5 {
 p {
 	font-family: 'Barlow', sans-serif!important;
 	font-size: 1rem!important;
+	justify-content: center;
 }
 
 /* link styling */
@@ -76,6 +77,11 @@ a:hover{
 	margin: 1rem!important;
 }
 
+iframe {
+	width: 100%;
+	height: 400px;
+}
+
 /* icon styling */
 
 .icon {
@@ -84,12 +90,16 @@ a:hover{
     padding: 0 .5rem 1rem;
 }
 
+.icon-pair {
+    display: inherit;
+    justify-content: space-around;
+}
+
 #socialmedia {
 	padding-top:1rem;
 }
 
 #copyright {
-	/*color: #c62b5c!important;*/
 	font-size: .8rem!important;
 }
 
@@ -104,7 +114,7 @@ body {
 }
 
 section {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 
 .style-group {
@@ -143,44 +153,19 @@ footer {
 .main-icon-div {
 	display: flex;
 	justify-content: space-between;
+	margin-top:3rem;
 }
 
 .main-icon {
-	display: flex;
-	justify-content: space-between;
-	padding: 1rem 5rem;
-}
-
-.scouts-sketch {
-    display: inline-block;
-    max-height: 20.5rem;
-    padding: 1rem;
-}
-
-.scouts-wireframe {
-    display: inline-block;
-    max-height: 17rem;
-    padding: 1rem;
+    max-width: 36%;
+    margin: 1rem 0;
+    margin-left: 32%;
+    padding: 0;
 }
 
 .project-preview img {
 	max-width: 100%;
     max-height: 30rem;
-}
-
-.preview-fig {
-    padding: 1rem;
-    border-width: 2px;
-    border-color: #051e3e;
-    border-radius: 4px;
-    border-style: solid;
-    border-top-style: none;
-    transition: .4s;
-}
-
-.preview-fig:hover {
-	background-color: #051e3e!important;
-	transition: .4s;
 }
 
 figcaption {
@@ -190,23 +175,64 @@ figcaption {
 img {
 	max-width: 100%;
 	display: inline-block;
+	padding: 1rem 0;
 }
 
 /* media queries */
 
-@media (max-width: 650px){
-	header #socialmedia{
-		display: none;
-	}
+@media (max-width: 768px){
 	nav a{
 		font-size: 1rem!important;
 	}
+
+	header #socialmedia{
+		display: none;
+	}
 }
 
-@media (max-width: 360px){
+@media (max-width: 577px) {
+	.hackathon-screens {
+		width: 62%;
+	    margin-left: 19%;
+	    margin-bottom: 1rem;
+	}
+
 	nav a{
 		display: block;
 		width: 100%;
 		text-align: center;
 		padding: 5px 0;
+	}
+
+	.container {
+		padding-left: 30px!important;
+		padding-right: 30px!important;		
+	}
+
+	figcaption {
+		font-size: 1rem;
+	}
+
+	.icon-pair {
+	    display: block;
+	    justify-content: space-around;
+	}
+
+	.main-icon-div {
+		margin-top: 0;
+		margin-bottom: 1.5rem;
+	}
+
+	.icon-group {
+		padding: 0!important;
+	}
+
+	h3{
+		font-size: 1rem!important;
+	}
+
+}
+
+@media (max-width: 360px){ 
+
 }
