@@ -53,11 +53,12 @@ styleguide.html
               </div>
             </nav>
 
-            <div class="jumbotron text-center">
-
-                <h1>Heather Robyn</h1>
-                <h2>The Styleguide</h2>
-            </div>
+            <a id="jumbo">
+                <div class="jumbotron text-center">
+                    <h1>Heather Robyn</h1>
+                    <h2>The Styleguide</h2>
+                </div>
+            </a>
         </header>
 
         <div class="container">
@@ -199,7 +200,11 @@ styleguide.html
                     <h1>Images</h1>
                     <section>
                         <h2>Icons</h2>
-                        <code>
+                        <img src="img/socialmedia/linkedin.png" alt="LinkedIn Logo" class="icon">
+                        <img src="img/socialmedia/behance.png" alt="Behance Logo" class="icon">
+                        <img src="img/socialmedia/instagram.png" alt="Instagram Logo" class="icon">
+                        <img src="img/socialmedia/email.png" alt="Email Icon" class="icon">
+                        <code><br>
                             .icon {<br>
                                 display: inline;<br>
                                 width: 2.4rem;<br>
@@ -213,6 +218,7 @@ styleguide.html
                     </section>
                     <section>
                         <h2>Images</h2>
+                        <img src="img/hackathon-6.png">
                         <code>
                             img {<br>
                                 max-width: 100%;<br>
@@ -224,30 +230,11 @@ styleguide.html
                             }
                         </code>
                     </section>
-                    <section>
-                        <h2>Figcaptions</h2>
-                        <code>
-                            figcaption {<br>
-                                padding: 1rem;<br>
-                                border-width: 2px;<br>
-                                border-color: #051e3e;<br>
-                                border-radius: 4px;<br>
-                                border-style: solid;<br>
-                                border-top-style: none;<br>
-                                transition: .4s;<br>
-                            }<br>
-
-                            figcaption:hover {<br>
-                                background-color: #051e3e!important;<br>
-                                transition: .4s;<br>
-                            }
-                        </code>
-                    </section>
                 </div>
                 <div class="col-lg-6 style-group">
                     <h1>Sections</h1>
                     <section>
-                        <h2>Footer</h2>
+                        <h2><a href="#footer-socialmedia">Footer</a></h2>
                         <code>
                             footer {<br>
                                 position: absolute!important;<br>
@@ -261,7 +248,7 @@ styleguide.html
                         </code>
                     </section>
                     <section>
-                        <h2>Bottom-sticky footer</h2>
+                        <h2><a href="#footer-socialmedia">Bottom-sticky footer</a></h2>
                         <code>
                             html {<br>
                               position: relative;<br>
@@ -274,7 +261,7 @@ styleguide.html
                         </code>
                     </section>
                     <section>
-                        <h2>Hero Banner</h2>
+                        <h2><a href="#jumbo">Hero Banner</a></h2>
                         <code>
                             .jumbotron {<br>
                                 background-color: #051e3e!important;<br>
