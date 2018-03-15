@@ -36,6 +36,17 @@ p {
 	justify-content: center;
 }
 
+.show-me {
+	display: none!important;
+}
+
+#contact-p {
+	text-align: center;
+	max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* link styling */
 
 nav {
@@ -188,13 +199,22 @@ img {
 	header #socialmedia{
 		display: none;
 	}
+
 }
 
 @media (max-width: 577px) {
 	.hackathon-screens {
-		width: 62%;
-	    margin-left: 19%;
+		width: 72%;
+	    margin-left: 14%;
 	    margin-bottom: 1rem;
+	}
+
+	.hide-me {
+		display: none!important;
+	}
+
+	.show-me {
+		display: block!important;
 	}
 
 	nav a{
@@ -234,5 +254,8 @@ img {
 }
 
 @media (max-width: 360px){ 
-
+	.hackathon-screens {
+		margin: 0;
+		width: 100%;
+	}
 }
