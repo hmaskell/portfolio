@@ -182,6 +182,9 @@ footer {
 
 figcaption {
 	text-align: center;
+	font-family: 'Barlow', sans-serif!important;
+	font-size: .9rem!important;
+
 }
 
 img {
