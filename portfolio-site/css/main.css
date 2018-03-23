@@ -85,6 +85,11 @@ a:hover{
 	color: #fe9c8f!important;
 }
 
+.btn-info:hover {
+	background-color: #fe9c8f!important;
+	border-color: #fe9c8f!important;
+}
+
 .btn {
 	margin: 1rem!important;
 }
@@ -133,6 +138,9 @@ section {
 	background-color: #f9f4f4;
 	padding: 1rem;
 	border-radius: 10px;
+	margin-left: 10px;
+	margin-right:10px;
+	max-width:47%!important;
 }
 
 .style-group section {
