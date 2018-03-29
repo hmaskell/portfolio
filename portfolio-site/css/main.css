@@ -164,6 +164,11 @@ footer {
     overflow:hidden!important;
 }
 
+#footer-links {
+	padding-top: .2rem;
+	padding-bottom: .7rem;
+}
+
 .work-button {
 	text-align: center;
 }
@@ -210,6 +215,10 @@ img {
 
 	header #socialmedia{
 		display: none;
+	}
+
+	.style-group {
+		max-width:100%!important;
 	}
 
 }
