@@ -69,6 +69,7 @@ styleguide.html
                             font-weight:normal;<br>
                             font-style:normal;<br>
                             color: #fe9c8f!important;<br>
+                            text-transform: uppercase;<br>
                             }
                         </code>
                     </section>
@@ -90,7 +91,7 @@ styleguide.html
                             h3 {<br>
                                 font-family: 'Barlow', sans-serif;<br>
                                 font-size: 1.3rem;<br>
-                                color: #c62b5c;<br>
+                                color: #051e3e;<br>
                             }
                         </code>
                     </section>
@@ -100,7 +101,7 @@ styleguide.html
                             h4 {<br>
                                 font-family: 'Barlow', sans-serif;<br>
                                 font-size: 1.2rem;<br>
-                                color: #c62b5c;<br>
+                                color: #051e3e;<br>
                             }
                         </code>
                     </section>
@@ -108,9 +109,10 @@ styleguide.html
                         <h5>H5 Header</h5>
                         <code>
                             h5 {<br>
+                                text-align: center;<br>
                                 font-family: 'Barlow', sans-serif;<br>
                                 font-size: 1.1rem;<br>
-                                color: #c62b5c;<br>
+                                color: #051e3e;<br>
                             }
                         </code>
                     </section>
@@ -120,6 +122,8 @@ styleguide.html
                             p {<br>
                                 font-family: 'Barlow', sans-serif;<br>
                                 font-size: 1rem;<br>
+                                color: #051e3e;<br>
+                                justify-content: center;<br>
                             }
                         </code>
                     </section>
@@ -172,6 +176,26 @@ styleguide.html
                         </code>
                     </section>
                     <section>
+                        <p id="citations" class="citation-a">Citations</p>
+                        <code>
+                        .citation-a {<br>
+                            display:block;<br>
+                            padding: 1rem;<br>
+                            width:19rem;<br>
+                            margin-left: auto;<br>
+                            margin-right: auto;<br>
+                            background-color: #f9f4f4;<br>
+                            margin-top: .2rem;<br>
+                            text-align: center;<br>
+                            border-radius: 10px;<br>
+                        }<br>
+                        <br>
+                        .citations {<br>
+                            padding-bottom: 2rem;<br>
+                        }
+                        </code>
+                    </section>
+                    <section>
                             <a class="btn btn-info" href="work.html" role="button">Buttons</a>
                         <code><br>
                             .btn-info {<br>
@@ -180,13 +204,15 @@ styleguide.html
                                 color: #fe9c8f!important;<br>
                             }<br>
                             <br>
+                            .btn-info:hover {<br>
+                                background-color: #fe9c8f!important;<br>
+                                border-color: #fe9c8f!important;<br>
+                            }<br>
+
+                            <br>
                             .btn {<br>
                                 margin: 1rem!important;<br>
                             }<br>   
-                            <br>
-                            .work-button {<br>
-                                text-align: center;<br>
-                            }
                         </code>
                     </section>
                 </div>
@@ -194,13 +220,21 @@ styleguide.html
 
             <div class="row">
                 <div class="col-lg-6 style-group">
-                    <h1>Images</h1>
+                    <h1>Images & Video</h1>
                     <section>
                         <h2>Icons</h2>
-                        <img src="img/socialmedia/linkedin.png" alt="LinkedIn Logo" class="icon">
-                        <img src="img/socialmedia/behance.png" alt="Behance Logo" class="icon">
-                        <img src="img/socialmedia/instagram.png" alt="Instagram Logo" class="icon">
-                        <img src="img/socialmedia/email.png" alt="Email Icon" class="icon">
+                        <a href="https://ca.linkedin.com/in/heathermaskell">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                       <a href="https://www.behance.net/heathermaskell">
+                            <i class="fab fa-behance-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/heatherobyndesigns/">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:heatherobyndesigns@gmail.com?Subject=Hello%20there" target="_top">
+                            <i class="fas fa-envelope-square"></i>
+                        </a>
                         <code><br>
                             .icon {<br>
                                 display: inline;<br>
@@ -208,8 +242,26 @@ styleguide.html
                                 padding: 0 .5rem 1rem;<br>
                             }<br>
                             <br>
-                            #socialmedia {<br>
-                                padding-top:1rem;<br>
+                            .svg-inline--fa{<br>
+                                font-size: 3rem!important;<br>
+                                padding: 0 .5rem;<br>
+                            }<br>
+                            <br>
+                            .icon-pair {<br>
+                                display: inherit;<br>
+                                justify-content: space-around;<br>
+                            }<br>
+                            <br>
+                            .main-icon-div {<br>
+                                display: flex;<br>
+                                margin-left: auto;<br>
+                                margin-right: auto;<br>
+                                margin-top:3rem;<br>
+                            }<br>
+                            <br>
+                            .bigsm {<br>
+                                font-size: 7rem!important;<br>
+                                margin: 0 4rem;<br>
                             }
                         </code>
                     </section>
@@ -226,6 +278,13 @@ styleguide.html
                                 max-height: 30rem;<br>
                             }
                         </code>
+                    </section>
+                    <section>
+                        <h2>Video</h2>
+                            iframe {<br>
+                            width: 100%;<br>
+                            height: 400px;<br>
+                        }
                     </section>
                 </div>
                 <div class="col-lg-6 style-group">
@@ -266,6 +325,20 @@ styleguide.html
                             }
                         </code>
                     </section>
+                    <section>
+                        <h2>Style Group</h2>
+                        <code>
+                        .style-group {<br>
+                            background-color: #f9f4f4;<br>
+                            padding: 1rem;<br>
+                            border-radius: 10px;<br>
+                            margin-left: 10px;<br>
+                            margin-right:10px;<br>
+                            margin-bottom: 1rem;<br>
+                            max-width:47%!important;<br>
+                        }
+                        </code>
+                    </section>  
                 </div>
             </div>
 
@@ -281,7 +354,8 @@ styleguide.html
         <footer class="container-fluid text-center">
             <div id="footer-links">
                 <a href="https://github.com/hmaskell/portfolio">GitHub Repo |</a>
-                <a href="styleguide.html"> Styleguide</a>
+                <a href="styleguide.html"> Styleguide |</a>
+                <a href="citations.html"> Citations</a>
              <p id="copyright">Copyright Heather Maskell 2018. All rights reserved.</p>
         </footer>
         <script src="js/script.js"></script>
